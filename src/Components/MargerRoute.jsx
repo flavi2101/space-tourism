@@ -9,7 +9,7 @@ export default function MargerRoute() {
 
   return (
     <div className={location ==''? style.home : style[location]}>
-      <header>
+      <header style={{blockSize:"10%", inlineSize:"100%"}}>
         <Nav></Nav>
       </header>
       <Outlet></Outlet>

@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
+import style from './Nav.module.css'
 import logo from '../assets/shared/logo.svg'
+import hamburguer from '../assets/shared/icon-hamburger.svg'
+import close from '../assets/shared/icon-close.svg'
+
 
 export default function Nav() {return(
-    <nav>
-    <img src={logo} alt="logo-stars" />
-    <ul>
+    <nav className={style.nav}>
+    <img src={logo} className={style.logo} alt="logo-stars" />
+    
+    <ul className={style.itens}>
+    <img src={close} alt="close-icon" className={style.close} />
       <li>
         <Link to="/">
           <span></span>Home
@@ -26,5 +32,6 @@ export default function Nav() {return(
         </Link>
       </li>
     </ul>
+    <img src={hamburguer} className={style['burguer-icon']} alt="hamburgue-menu" />
   </nav>
 )}

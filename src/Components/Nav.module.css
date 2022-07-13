@@ -1,0 +1,62 @@
+@media screen and (max-width: 375px) {
+    .nav{
+        display: flex;
+        padding-inline: 24px;
+        padding-block-start: 24px;
+        justify-content: space-between;
+        
+    }
+
+    .logo{
+        block-size: 40px;
+        inline-size: 40px;
+        position: relative;
+        inset-block-end: 10px;
+    }
+
+    .burguer-icon{
+        block-size: 21px;
+        inline-size: 24px;
+    }
+
+    .itens{
+        background: hsla(0, 0%, 100%, 0.04);
+        backdrop-filter: blur(81.5485px);       
+        position: absolute;
+        inset-inline-end: 0px;
+        inset-inline-start: 121px;
+        inset-block-start: 0px;
+        inset-block-end: 0px;
+        list-style-type: none;
+        padding-inline-start: 32px;
+        padding-block-start: 118px;
+    }
+
+
+    .itens li {
+        text-transform: uppercase;
+        line-height: 19px;
+        font-weight: 400;
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+        padding-block-end: 32px;
+       
+    }
+    .close{
+        position: absolute;
+        inset-inline-end: 26.5px;
+        inset-block-start: 34px;
+    }
+
+    .itens a{
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+    }
+
+    .itens img {
+        block-size: 19px;
+        aspect-ratio: 1;
+
+    }
+    
+}
