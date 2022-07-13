@@ -1,0 +1,51 @@
+.container{
+    margin-block-start: 12%;
+    block-size: 78%;
+    color: white;
+    text-align: center;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+}
+
+.container h1{
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+}
+
+.container p{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.container div{
+    block-size: 150px;
+    inline-size: 150px;
+    background-color: white;
+    color: hsl(230, 35%, 7%);
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+.container div span{
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    position: relative;
+    inset-block-start: 40%;
+}
