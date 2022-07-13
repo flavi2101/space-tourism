@@ -1,14 +1,18 @@
 import React from "react";
-import {  Outlet } from "react-router-dom";
+import {  Outlet, useLocation } from "react-router-dom";
 import Nav from "./Nav";
+import style from './MargerRoute.module.css'
 
 export default function MargerRoute() {
+  let location = useLocation().pathname.split('/')[1]
+
+
   return (
-    <React.Fragment>
+    <div className={location ==''? style.home : style[location]}>
       <header>
         <Nav></Nav>
       </header>
       <Outlet></Outlet>
-    </React.Fragment>
+    </div>
   );
 }

@@ -1,11 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Destination from "./pages/Destination/Destination";
-import Crew from "./pages/Crew/Crew";
-import Technology from "./pages/Technology/Techonology";
-import MargerRoute from "./Components/MargerRoute";
+import React from "react";
+
+
+
+  import Home from"./pages/Home/Home";
+  import Destination from"./pages/Destination/Destination";
+  import Crew from"./pages/Crew/Crew" ;
+  import Technology from"./pages/Technology/Techonology";
+  import MargerRoute from"./Components/MargerRoute";
+
 
 export default function App() {
+ 
   return (
     <BrowserRouter>
       <Routes>

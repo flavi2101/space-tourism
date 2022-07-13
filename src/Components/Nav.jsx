@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import logo from '../assets/shared/logo.svg'
 
 export default function Nav() {return(
     <nav>
+    <img src={logo} alt="logo-stars" />
     <ul>
       <li>
         <Link to="/">

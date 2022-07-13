@@ -1,0 +1,22 @@
+@media screen and (max-width: 375px) {
+    .home{
+        background:url('../assets/home/background-home-mobile.jpg') ;
+        block-size: 100%;
+        inline-size: 100%;
+    }
+    .destination{
+        background:url('../assets/destination/background-destination-mobile.jpg') ;
+        composes: home;
+    }
+    
+    .crew{
+        background:url('../assets/crew/background-crew-mobile.jpg') ;
+        composes: home;
+    }
+    
+    .technology{
+        background:url('../assets/technology/background-technology-mobile.jpg') ;
+        composes: home;
+    }
+    
+}
