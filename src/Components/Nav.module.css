@@ -23,6 +23,7 @@
         background: hsla(0, 0%, 100%, 0.04);
         backdrop-filter: blur(81.5485px);       
         position: absolute;
+        z-index: 10;
         inset-inline-end: 0px;
         inset-inline-start: 121px;
         inset-block-start: 0px;
