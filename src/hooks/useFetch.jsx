@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function useFetch(url) {
   const [error, setError] = useState(null);
   const [isPending, setisPending] = useState(false);
-  const [data, setData] = useState(10);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const abortControler = new AbortController();

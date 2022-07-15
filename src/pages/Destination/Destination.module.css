@@ -1,0 +1,45 @@
+@media screen and (max-width: 375px) {
+  .destination {
+    color: white;
+    block-size: 90%;
+    text-align: center;
+    padding-inline: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    
+  }
+
+  .destination h1 {
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    block-size: 10%;
+  
+    
+  }
+
+  .destination h1 > span {
+    color: #ffffff;
+    opacity: 0.25;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .destination img {
+    block-size: 150px;
+    inline-size: 150px;
+    position: absolute;
+    inset-block-start: 20%;
+   
+  }
+
+  
+}

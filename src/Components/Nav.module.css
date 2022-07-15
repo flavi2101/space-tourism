@@ -42,6 +42,15 @@
         padding-block-end: 32px;
        
     }
+
+    .itens li span{
+        color:  #FFFFFF;
+        opacity: 0.25;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
     .close{
         position: absolute;
         inset-inline-end: 26.5px;

@@ -7,41 +7,43 @@ import { useState } from "react";
 
 export default function Nav() {
   const [handlermenu, sethandlermenu] = useState(false);
-  
-
-
-
-
 
   return (
     <nav className={style.nav}>
       <img src={logo} className={style.logo} alt="logo-stars" />
 
-      {handlermenu && <ul className={style.itens}>
-        <img src={close} alt="close-icon" className={style.close}  onClick={()=>sethandlermenu(false)}/>
-        <li>
-          <Link to="/" onClick={()=>sethandlermenu(false)}>
-            <span>00 </span>Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/destination" onClick={()=>sethandlermenu(false)}>
-            <span>01 </span>Destination
-          </Link>
-        </li>
-        <li>
-          <Link to="/crew" onClick={()=>sethandlermenu(false)}>
-            <span>02 </span>Crew
-          </Link>
-        </li>
-        <li>
-          <Link to="/technology" onClick={()=>sethandlermenu(false)}>
-            <span>03 </span>Tecnnology
-          </Link>
-        </li>
-      </ul>}
+      {handlermenu && (
+        <ul className={style.itens}>
+          <img
+            src={close}
+            alt="close-icon"
+            className={style.close}
+            onClick={() => sethandlermenu(false)}
+          />
+          <li>
+            <Link to="/" onClick={() => sethandlermenu(false)}>
+              <span>00 </span>Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/destination" onClick={() => sethandlermenu(false)}>
+              <span>01 </span>Destination
+            </Link>
+          </li>
+          <li>
+            <Link to="/crew" onClick={() => sethandlermenu(false)}>
+              <span>02 </span>Crew
+            </Link>
+          </li>
+          <li>
+            <Link to="/technology" onClick={() => sethandlermenu(false)}>
+              <span>03 </span>Tecnnology
+            </Link>
+          </li>
+        </ul>
+      )}
       <img
-        onClick={()=>sethandlermenu(true)}
+        onClick={() => sethandlermenu(true)}
         src={hamburguer}
         className={style["burguer-icon"]}
         alt="hamburgue-menu"

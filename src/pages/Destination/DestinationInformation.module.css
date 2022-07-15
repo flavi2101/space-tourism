@@ -1,0 +1,89 @@
+.information {
+  block-size: 56%;
+  inline-size: 90%;
+  position: relative;
+}
+
+.information ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #d0d6f9;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  line-height: 17px;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  padding-block-end: 16px;
+  position: absolute;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-start: -9%;
+
+}
+
+.information section {
+  block-size: 100%;
+}
+
+.information li {
+  position: relative;
+  cursor: pointer;
+  block-size: fit-content;
+}
+
+.information li:hover::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  block-size: 3px;
+  inline-size: 100%;
+  inset-block-end: -8px;
+}
+
+.information h2 {
+ 
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-inline: 0;
+  margin-block: 0;
+}
+
+.information p {
+  
+  text-align: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #d0d6f9;
+  block-size: 40%;
+}
+
+.information hr {
+  border: 1px solid #383b4b;
+}
+
+.information div {
+  block-size: 19%;
+  padding-block-end: 8px;
+  font-family: 'Bellefair';
+}
+
+.information span {
+  display: block;
+}
+.distance{
+    padding-block-start: 6px;
+  }
+
+.information div> span + span{
+    font-size: 28px;
+    
+}
