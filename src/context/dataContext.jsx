@@ -7,6 +7,8 @@ export default function DataContextProvider({ children }) {
     switch (action.type) {
       case "destination":
         return { ...state, destination: action.payload };
+      case "crew":
+        return{...state, crew: action.payload}
       default:
         return state;
     }
