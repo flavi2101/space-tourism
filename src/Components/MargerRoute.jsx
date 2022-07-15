@@ -1,4 +1,4 @@
-
+import DataContextProvider from "../context/dataContext";
 import { Outlet, useLocation } from "react-router-dom";
 import Nav from "./Nav";
 import style from "./MargerRoute.module.css";
@@ -13,7 +13,9 @@ export default function MargerRoute() {
       <header style={{ blockSize: "10%", inlineSize: "100%" }}>
         <Nav></Nav>
       </header>
+      <DataContextProvider>
       <Outlet></Outlet>
+    </DataContextProvider>
     </div>
   );
 }
