@@ -1,36 +1,24 @@
+import SingleDestination from "./SingleDestination";
 import style from "./DestinationInformation.module.css";
+import React from "react";
 
-export default function DestinationInformation({ infor, link }) {
+export default function DestinationInformations({ infor, seturl, url }) {
   function handleClick(query) {
-    //setshowInformation(query);
-    link(`http://localhost:3000/destinations?name=${query}`);
+    seturl(`http://localhost:3000/destinations?name=${query}`);
   }
+
+  infor = !url.includes("?")
+    ? infor.filter((val) => val.name === "Moon")
+    : infor;
 
   return (
     <article className={style.information}>
-      <ul>
-        <li autoFocus onClick={() => handleClick("Moon")}>
-          Moon
-        </li>
-        <li onClick={() => handleClick("Mars")}> Mars</li>
-        <li onClick={() => handleClick("Europa")}>Europa</li>
-        <li onClick={() => handleClick("Titan")}>Titan</li>
-      </ul>
       {infor.map((destination) => {
         return (
-          <section key={Math.random()}>
-            <h2>{destination.name}</h2>
-            <p>{destination.description}</p>
-            <hr />
-            <div>
-              <span className={style.distance}>Avg. Distance</span>
-              <span>{destination.distance}</span>
-            </div>
-            <div>
-              <span className={style.time}>Est. Travel Time</span>
-              <span>{destination.travel}</span>
-            </div>
-          </section>
+          <SingleDestination key={Math.random()}
+            destination={destination}
+            handleClick={handleClick}
+          ></SingleDestination>
         );
       })}
     </article>
