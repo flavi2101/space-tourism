@@ -1,13 +1,14 @@
 @media screen and (max-width: 375px) {
-
-  .singleInformation {
+  .tech {
     block-size: 90%;
+
     position: relative;
     color: white;
     text-align: center;
     padding-inline: 16px;
   }
-  .singleInformation h1 {
+
+  .tech h1 {
     font-family: "Barlow Condensed";
     font-weight: 400;
     text-transform: uppercase;
@@ -15,10 +16,9 @@
     line-height: 19px;
     letter-spacing: 2.7px;
     block-size: 10%;
-
   }
 
-  .singleInformation h1 > span {
+  .tech h1 > span {
     color: #ffffff;
     opacity: 0.25;
     font-weight: 700;
@@ -28,17 +28,24 @@
     display: inline-block;
   }
 
-  .singleInformation img {
-    block-size: 125px;
-    inline-size: 125px;
+  .tech img {
+    block-size: 222px;
+    inline-size: 100%;
     position: absolute;
     inset-block-start: 8%;
-    inset-inline-end: 31%;
+    inset-inline-end: 0%;
+    inset-inline-start:0% ;
   }
 
-  .singleInformation ul {
+  .tech hr {
+    position: relative;
+    inset-block-start: 37%;
+    border: 0.5px solid hsl(228, 3%, 36%);
+  }
+
+  .tech ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
     color: #d0d6f9;
     font-family: "Barlow Condensed";
@@ -48,78 +55,66 @@
     letter-spacing: 2.36px;
     padding-block-end: 16px;
     position: absolute;
-    inset-inline-start: 16px;
-    inset-inline-end: 16px;
-    inset-block-start: 35%;
-  }
-
-  .singleInformation li {
-    position: relative;
-    cursor: pointer;
-    block-size: fit-content;
-  }
-
-  .singleInformation li:hover::before {
-    position: absolute;
-    content: "";
-    background-color: white;
-    block-size: 3px;
-    inline-size: 100%;
-    inset-block-end: -8px;
-  } 
-
-  .singleInformation section {
-    block-size: 65%;
-    position: absolute;
-    inset-block-start: 41%;
-    inset-block-end: 0;
-    padding-inline-end: 16px;
+    inset-inline-start: 30%;
+    inset-inline-end: 30%;
+    inset-block-start: 49%;
   }
 
  
 
-  .singleInformation h2 {
+  .tech button {
+    position: relative;
+    block-size: 32px;
+    inline-size: 33px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    padding-block-end: 4px;
+    
+  
+  }
+
+   .tech section {
+    block-size: 44%;
+    position: absolute;
+    inset-block-start: 56%;
+    inset-block-end: 0;
+    padding-inline-end: 16px;
+  }
+
+  .tech section h2 {
     font-family: "Bellefair";
     font-style: normal;
     font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    margin-inline: 0;
-    margin-block: 0;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-block: 8px;
   }
 
-  .singleInformation p {
+  .tech section h3 {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    padding-block-end: 16px;
+  }
+
+  .tech section p {
     font-family: "Barlow";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
+    text-align: center;
     color: #d0d6f9;
-    block-size: 37%;
-    
-  }
-
-  .singleInformation hr {
-    border: 1px solid #383b4b;
-  }
-
-  .singleInformation div {
-    block-size: 15%;
-    margin-block-end: 8px;
-    font-family: "Bellefair";
-  }
-
-  .singleInformation span {
-    display: block;
-  }
-  .distance {
-    padding-block-start: 6px;
-  }
-
-  .singleInformation div > span + span {
-    font-size: 28px;
   }
 }

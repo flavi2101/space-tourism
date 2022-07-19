@@ -1,5 +1,5 @@
 import useFetch from "../../hooks/useFetch";
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DataProvider } from "../../context/dataContext";
 import TechInformations from "./TechInformations"
 
@@ -13,7 +13,7 @@ export default function Technology() {
   }, [data, dispatch, url]);
 
   return (
-    <section>
+    <React.Fragment>
       {error && <h1 style={{ color: "white" }}>error</h1>}
       {isPending && <h1 style={{ color: "white" }}>Pendencia</h1>}
 
@@ -23,6 +23,6 @@ export default function Technology() {
         url={url}
        
       ></TechInformations>
-    </section>
+    </React.Fragment>
   );
 }

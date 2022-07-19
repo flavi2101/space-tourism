@@ -1,5 +1,4 @@
 import SingleDestination from "./SingleDestination";
-import style from "./DestinationInformation.module.css";
 import React from "react";
 
 export default function DestinationInformations({ infor, seturl, url }) {
@@ -12,7 +11,7 @@ export default function DestinationInformations({ infor, seturl, url }) {
     : infor;
 
   return (
-    <article className={style.information}>
+    <React.Fragment >
       {infor.map((destination) => {
         return (
           <SingleDestination key={Math.random()}
@@ -21,6 +20,6 @@ export default function DestinationInformations({ infor, seturl, url }) {
           ></SingleDestination>
         );
       })}
-    </article>
+    </React.Fragment>
   );
 }

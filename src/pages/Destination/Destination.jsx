@@ -1,9 +1,9 @@
 import useFetch from "../../hooks/useFetch";
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DataProvider } from "../../context/dataContext";
 import DestinationInformations from "./DestinationInformation";
 
-import style from "./Destination.module.css"
+
 
 export default function Destination() {
   const [url, seturl] = useState("http://localhost:3000/destinations");
@@ -18,11 +18,11 @@ export default function Destination() {
 
 
   return (
-    <section className={style.destination}>
+    <React.Fragment >
       {error && <h1 style={{ color: "white" }}>error</h1>}
       {isPending && <h1 style={{ color: "white" }}>Pendencia</h1>}
       
       <DestinationInformations infor={destination} seturl={seturl} url={url}></DestinationInformations>
-    </section>
+    </React.Fragment>
   );
 }

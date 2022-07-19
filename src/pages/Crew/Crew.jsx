@@ -1,5 +1,5 @@
 import useFetch from "../../hooks/useFetch";
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DataProvider } from "../../context/dataContext";
 import CrewInformation from "./CrewInformation";
 
@@ -17,11 +17,11 @@ export default function Crew() {
   
 
   return (
-    <section>
+    <React.Fragment>
       {error && <h1 style={{ color: "white" }}>error</h1>}
       {isPending && <h1 style={{ color: "white" }}>Pendencia</h1>}
 
       <CrewInformation infor={crew} seturl={seturl} url={url}></CrewInformation>
-    </section>
+    </React.Fragment>
   );
 }

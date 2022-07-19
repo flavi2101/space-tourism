@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-
+import style from './SingleTech.module.css'
 
 
 export default function SingleTechItem({ technology, seturl }) {
@@ -12,17 +12,17 @@ export default function SingleTechItem({ technology, seturl }) {
   }, [technology.images.landscape]);
 
   return (
-    <section style={{backgroundColor: 'white'}}>
+    <section className={style.tech}>
       <h1>
-        <span>01</span> Pick your destination
+        <span>03</span> Space Launch 101
       </h1>
       <img alt="" src={require(`../../assets/technology/${img}`)} />
       <ul>
         <li autoFocus onClick={() => handleClick("Launch%20vehicle")}>
-          teste1
+          <button>1</button>
         </li>
-        <li onClick={() => handleClick("Spaceport")}>teste2 </li>
-        <li onClick={() => handleClick("Space%20capsule")}>teste3</li>
+        <li onClick={() => handleClick("Spaceport")}><button>2</button> </li>
+        <li onClick={() => handleClick("Space%20capsule")}><button>3</button></li>
        
       </ul>
       <section >
