@@ -1,6 +1,6 @@
 import useFetch from "../../hooks/useFetch";
-import { DataProvider } from "../../context/dataContext";
 import { useContext, useEffect, useState } from "react";
+import { DataProvider } from "../../context/dataContext";
 import DestinationInformations from "./DestinationInformation";
 
 import style from "./Destination.module.css"
@@ -14,6 +14,8 @@ export default function Destination() {
     dispatch({ type: "destination", payload: data });
     
   }, [data, dispatch, url]);
+
+
 
   return (
     <section className={style.destination}>

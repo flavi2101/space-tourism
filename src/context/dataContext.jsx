@@ -9,13 +9,15 @@ export default function DataContextProvider({ children }) {
         return { ...state, destination: action.payload };
       case "crew":
         return{...state, crew: action.payload}
+      case 'technology':
+        return {...state, technology:action.payload}
       default:
         return state;
     }
   }
 
   const [state, dispatch] = useReducer(trigerStateChange, {
-    destination: [],
+    destination: [], crew:[], technology:[]
   });
 
   return (

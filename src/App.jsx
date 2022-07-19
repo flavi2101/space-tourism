@@ -6,7 +6,7 @@ import React from "react";
   import Home from"./pages/Home/Home";
   import Destination from"./pages/Destination/Destination";
   import Crew from"./pages/Crew/Crew" ;
-  import Technology from"./pages/Technology/Techonology";
+  import Technology from"./pages/Technology/Technology"
   import MargerRoute from"./Components/MargerRoute";
 
 
